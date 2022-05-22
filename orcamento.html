@@ -8,10 +8,9 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>Belotti Tatoo</title>
 	<link rel="icon" href="imagens/maquina.de.tatuagem.png">
+  <title>Belotti Tatoo-Orçamento</title>
 </head>
 <body>
 	<header>
@@ -21,7 +20,7 @@
             <img src="imagens/logo.cima.png" width="250">
           </a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <button class="navbar-toggler bg-warning" data-toggle="collapse" data-target="#nav-principal">
               <span class="navbar-toggler-icon"> </span>
             </button>
 
@@ -45,8 +44,35 @@
     	</nav>
 	</header>
 
-	<h1 class="align-self-center"> EM BREVE</h1>
+	
+  <div id="estu" class="mt-4">
+    <h1>Tamanho da Tatuagem</h1>
+    <input type="text" name="tamt" id="cm" placeholder="Em cm" maxlength = '3'>
 
+    <h1 class="mt-4"> Parte do Corpo</h1>
+  <select id="partec" class="mt-2" required="">
+   
+    <option value="20" selected>Braço</option>
+    <option value="30">Perna</option>
+    <option value="40">Ombro</option>
+    <option value="50">Barriga</option>
+    <option value="60">Panturrilha</option>
+    <option value="70">Ante-Braço</option>
+    <option value="80">Costas</option>
+  </select>
+  </div>
+
+<div id="estu">
+  <button type="submit" onclick="calcular()" class="btn btn-warning mt-4" id="botao" disabled class="btn-calc">Calcular</button>
+  <!--<button onclick="limpar()" class="btn btn-warning mt-4" id="limpar" >Limpar</button>-->
+  <a href="orcamento.html" class="btn btn-warning mt-4" type="button">Limpar</a>
+</div>
+
+<div id="estu" class="mt-4">
+  <div id="res"></div>
+</div>
+
+<div class="borda"></div>
 
 <footer class="mt-4 mb-4 bg-light">
       <div class="container">
@@ -60,14 +86,14 @@
             </p>
           </div>
           <div class="col-md-4 d-flex justify-content-end">
-            <a href="" class="btn btn-outline-success ml-2">
+            <a href="https://api.whatsapp.com/message/X7LHTHR6ZZFYC1?autoload=1&app_absent=0" target="_blank" class="btn btn-outline-success ml-2">
               <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="" class="btn btn-outline-primary ml-2">
+            <a href="https://www.facebook.com/jonas.rybeiro" target="_blank" class="btn btn-outline-primary ml-2">
               <i class="fab fa-facebook-square"></i>
             </a>
 
-            <a href="" class="btn btn-outline-dark ml-2">
+            <a href="https://www.instagram.com/_jonasbelotti/" target="_blank" class=" btn btn-outline-dark ml-2">
               <i class="fab fa-instagram fa-lg"></i>
             </a> 
             
@@ -77,10 +103,7 @@
     </footer>
 
 
-
-
-
-
+  <script src="script.js"></script>
 	 <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
