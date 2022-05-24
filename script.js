@@ -17,7 +17,6 @@ function checkChar(e){
     }
 }
 
-
 function calcular(){
 
     let select = document.querySelector('#partec').options[document.querySelector('#partec').selectedIndex].value
@@ -36,14 +35,14 @@ function calcular(){
 }
 
 
- 
+/* 
 function limpar() {
     let select = document.querySelector('select#partec').value = ''
     let tamt = document.querySelector('#cm').value = ''
     res.innerHTML= value = ''
 
 }
-
+*/
 //Botão desabilitado
 function checkInputs(inputs) {
 
