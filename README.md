@@ -1,0 +1,1 @@
+Esse projeto foi feito para meu amigo que é tatuador, foi um jeito que eu achei para praticar HTML, CSS, Bootstrap e Javascript. Como eu estava começando tive um pouco de dificuldade com Javascript mas que logo consegui superar, foi um projeto simples porem de grande aprendizado
